@@ -21,7 +21,6 @@ let pokemonRepository = (function() {
   ];
 
     function add(pokemon) {
-      document.write(Object.keys(pokemon));
       if (typeof(pokemon) === 'object' && 'name','height','type' in pokemon && Object.keys(pokemon).length === 3) {
         pokemonList.push(pokemon);
       }
