@@ -21,7 +21,10 @@ let pokemonRepository = (function() {
   ];
 
     function add(pokemon) {
-      pokemonList.push(pokemon);
+      document.write(Object.keys(pokemon));
+      if (typeof(pokemon) === 'object' && 'name','height','type' in pokemon && Object.keys(pokemon).length === 3) {
+        pokemonList.push(pokemon);
+      }
     }
     function getAll() {
       return pokemonList;
@@ -31,6 +34,6 @@ let pokemonRepository = (function() {
       getAll: getAll,
     };
   })();
-
+(pokemonRepository.add({name:'Kadabra',height:1.3,type:['psychic']}));
 //Output PokemonList using the function output
 (pokemonRepository.getAll()).forEach(output);
