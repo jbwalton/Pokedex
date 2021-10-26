@@ -1,98 +1,57 @@
 
-
-body{
-  font-family: 'Special Elite', sans-serif;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 2.6;
-  background-color: bisque;
-  }
-.button-class {
-  background-color: #4caf50; /* Green */
-  border: none;
-  color: white;
-  padding: 16px 32px;
-  text-align: center;
-  text-decoration: none;
-  font-size: 16px;
-  margin: 4px 2px;
-  -webkit-transition-duration: 0.4s; /* Safari */
-  transition-duration: 0.4s;
-  cursor: pointer;
-  background-color: white;
-  color: black;
-  border: 2px solid #4caf50;
-  width: 50%;
+body {
+  background: bisque;
+  margin-top:100px;
+}
+.navbar {
+	background-color: orangered;
+	padding-top: 10px;
+    padding-bottom: 10px;
 }
 
-.scriptlist {
-  border-radius: 25px;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 2.6;
-  max-width: 100%;
-  max-height: 100%;
-  display: flex;
-  justify-content: center;
-  padding: 30px;
-  margin-top:-10px;
-  margin-left: 25%;
-  margin-right: 25%;
-  background-color: lavender;
+.navbar-brand {
+	margin-left: 3vw;
 }
-.titlebar{
-  font-size: 18px;
-  display:flex;
-  flex-direction: column;
-  text-align: center;
-  padding: 0px;
-  margin:-10px;
-  background-color:brown
+
+.navbar-toggler {
+	margin-right: 3vw;
 }
-h1{
-  height: 50px;
-  display: contents;
+.container {
+  margin-top:50px;
 }
-ul {
-    display:flex;
-    justify-content: center;
-    flex-direction: column;
+.pokemon-list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.list-group-item {
+    border: none;
     text-align: center;
-    list-style-type: none;
-    padding:0;
+
   }
-li {
-    /*display:flex;
-    justify-content: center;
-    text-align: center;*/
-}
-@media all and (min-width: 660px) and (max-width: 900px){
-  .scriptlist{
-    font-size: 16px;
-    margin-left:20%;
-    margin-right:20%;
+.btn {
+    width: 150px;
+    background-color: cadetblue;
+    border: 1px solid black;
   }
-  .button-class{
-    font-size:16px;
+
+.modal-img {
+    width: 200px;
+    height: 200px;
   }
-}
-@media all and (min-width: 500px) and (max-width: 660px){
-  .scriptlist{
-    font-size: 14px;
-    margin-left:10%;
-    margin-right:10%;
+.modal-body {
+    text-align: center;
   }
-  .button-class{
-    font-size:14px;
+
+.collapse {
+    justify-content: right;
   }
-}
-@media all and (max-width: 500px) {
-  .scriptlist{
-    font-size: 13px;
-    margin-left:0px;
-    margin-right:0px;
+
+.list-group-item {
+    background-color: bisque;
   }
-  .button-class{
-    font-size:13px;
-  }
-}
+
+@media all and (max-width: 550px) {
+.pokemon-list {
+    grid-template-columns: 1fr 1fr;
+}};
