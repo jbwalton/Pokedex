@@ -1,0 +1,15 @@
+{
+    "env": {
+        "es6": true,
+        "browser": true
+    },
+    "extends": [
+        "eslint:recommended"
+    ],
+    "rules": {
+      /* eslint-disable no-console */
+      console.error('Error when validating item', item);
+      /* eslint-enable no-console */
+        "quotes": ["error", "single"]
+    }
+}
