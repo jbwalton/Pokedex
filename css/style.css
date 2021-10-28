@@ -1,9 +1,11 @@
 
 body {
+  color:black;
   background: bisque;
   margin-top:100px;
 }
 .navbar {
+  color:black;
 	background-color: orangered;
 	padding-top: 10px;
     padding-bottom: 10px;
@@ -29,7 +31,26 @@ body {
     text-align: center;
 
   }
+.loader {
+  margin-left: 50%;
+  border: 1px solid #f3f3f3; /* Light grey */
+  border-top: 8px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  animation: spin 1s linear infinite;
+  justify-content: center;
+  align-items: center;
+
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
 .btn {
+    color:black;
     width: 150px;
     background-color: cadetblue;
     border: 1px solid black;
@@ -42,16 +63,21 @@ body {
 .modal-body {
     text-align: center;
   }
-
+.modal-header {
+    color:black;
+    background-color: orangered;
+}
 .collapse {
     justify-content: right;
   }
 
 .list-group-item {
+    color:black;
     background-color: bisque;
   }
 
 @media all and (max-width: 550px) {
 .pokemon-list {
     grid-template-columns: 1fr 1fr;
-}};
+  }
+}
